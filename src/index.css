@@ -1,0 +1,335 @@
+:root {
+  --Main_color: #000;
+  --Secoundry-color: #139ffe;
+  --text_color: #fff;
+  --text_gray_color: #d4d4d8;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text_color) !important;
+  background-color: var(--Main_color) !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+#downloadModal{
+  display: block;
+  position: fixed; 
+  z-index: 1; 
+  left: 30%;
+  top: 20%;
+  width: 500px; 
+  height: 500px; 
+  overflow: auto; 
+  background-color: rgb(61, 54, 54); 
+  box-shadow: 0 0 100px 40px rgb(10, 10, 10);
+}
+.modal-container{
+  padding: 90px 50px;
+}
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 48px;
+  font-weight: bold;
+  right: 38%;
+  position: fixed;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.active {
+  background-color: var(--Secoundry-color);
+  color: var(--text_color);
+}
+.home_top_box_container {
+  background-color: var(--Main_color);
+  padding: 20px 0px 0px 0px;
+  margin-top: 10rem !important;
+}
+.section_container1 {
+  height: 80vh;
+}
+.navbar {
+  padding: 5px 0px !important;
+}
+/* .mobiarmour_img {
+  height: 400px;
+  width: 35%;
+} */
+.accordion-button {
+  background-color: #1c1c1c !important;
+  color: var(--text_color) !important;
+}
+.accordion-button::after {
+  filter: invert(1);
+}
+div.app_button_container,
+.desk_top {
+  display: none !important;
+}
+.mobiarmour_details {
+  width: 50%;
+  text-align: left;
+}
+.mobiarmour_details h3 {
+  font-size: 2.5rem;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.about_section_container h3 {
+  font-size: 2.25rem;
+}
+.about_section_container p {
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+}
+.mobiarmour_details p {
+  font-size: 1.125rem;
+  /* line-height: 1.3125rem; */
+  color: var(--text_gray_color);
+  /* width: 70%; */
+  text-align: justify;
+  margin-bottom: 30px;
+}
+#button-addon1 {
+  background-color: var(--text_color) !important;
+  color: var(--Main_color) !important;
+  padding: 13px;
+}
+.button_bg {
+  background-color: var(--Secoundry-color) !important;
+  border: var(--Secoundry-color) !important;
+  color: var(--text_color) !important;
+}
+.getbtnlinkSMS {
+  width: 38%;
+  background-color: var(--Secoundry-color) !important;
+  border: var(--Secoundry-color) !important;
+  color: var(--text_color) !important;
+}
+.input-group {
+  width: 60% !important;
+}
+.input-group input {
+  color: var(--Main_color) !important;
+}
+.input-group input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: var(--Main_color);
+}
+.form_container {
+  margin-top: 70px;
+}
+.mobiarmour_img img {
+  width: 350px;
+}
+
+.mobiarmour_parallax_container {
+  height: 1000px;
+  background-image: url("./Assets/MobiArmor.png"),
+    url("./Assets/MobiArmor2.png"),
+    url("./Assets/MobiArmor3.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top 150px left 110px, top 151px right 550px,
+  bottom 100px right 110px, bottom 10px left 10px;
+  /* background-position: top 105px left 240px, top 30px right 740px,
+    bottom 181px right 240px, bottom 10px left 10px; */
+  background-size: auto;
+}
+.carousel_container {
+  width: 800px;
+  margin-top: 30px;
+  background-color: #1c1c1c;
+  text-align: center;
+}
+.carousel-item {
+  background-color: rgb(28, 28, 28);
+  padding: 20px 100px;
+}
+.testimonial_container {
+  margin-top: 30px;
+}
+.user_img img {
+  border-radius: 50%;
+  margin-bottom: 40px;
+}
+.counter_wrapper {
+  width: 800px;
+  margin-top: 20px;
+}
+.counter_wrapper .card {
+  width: 32%;
+  padding: 20px;
+  background-color: rgb(28, 28, 28);
+  color: var(--text_color) !important;
+}
+.Qr_code {
+  margin-top: 80px;
+}
+.footer_container {
+  background-color: rgb(28, 28, 28);
+  padding: 20px;
+  margin-top: 50px;
+}
+.footer_container p {
+  margin: 0px;
+}
+.navbar-brand,
+.nav-link {
+  cursor: pointer !important;
+}
+.about_container,
+.faq_container {
+  /* height: 78vh; */
+  display: flex;
+  align-items: center;
+}
+#accordionFlushExample {
+  width: 100%;
+}
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+.about_details {
+  /* display: flex;
+  align-items: center; */
+}
+.abuot_head {
+  margin: 50px 0px;
+}
+.about_details p,
+.accordion-body {
+  text-align: left;
+}
+.term_container {
+  height: 78vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer_container a {
+  display: inline-block !important;
+}
+
+@media screen and (max-width: 480px) {
+  .mobiarmour_img img {
+    width: 65% !important;
+  }
+  .desk_top {
+    display: block !important;
+  }
+  .navbar-toggler-icon {
+    filter: invert(1);
+  }
+  .section_container1 {
+    flex-direction: column-reverse;
+  }
+  .navbar-toggler {
+    border: 1px solid var(--text_gray_color) !important;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none !important;
+  }
+  .mobiarmour_details,
+  .mobiarmour_img,
+  .input-group,
+  .counter_wrapper .card {
+    width: 100% !important;
+  }
+  .mobiarmour_details h3,
+  .about_section_container h3 {
+    font-size: 1.3rem;
+  }
+ 
+  .mob_480 {
+    display: none !important;
+  }
+  .form_container{
+    margin-top: 0px !important;
+    margin-bottom: 50px ;
+  }
+  .form_container a{
+    width: 100%;
+  }
+  .section_container1,
+  .about_container {
+    height: auto;
+  }
+  .faq_container {
+    height: 64vh;
+  }
+  .home_top_box_container {
+    padding: 10px !important;
+    margin-top: 0px !important;
+  }
+  .about_section_container p,
+  .about_container p,
+  .faq_container p {
+    text-align: justify !important;
+  }
+  .carousel-item {
+    padding: 20px 40px !important;
+  }
+  .counter_wrapper {
+    flex-wrap: wrap !important;
+  }
+  .mobiarmour_parallax_container {
+    height: auto;
+    background: none;
+  }
+  .navbar-brand img {
+    width: 30px;
+  }
+
+}
+
+.modal-footer{
+  border-top: none !important;
+}
+.modal-header{
+  border-bottom: none !important;
+}
+.modal-content {
+  background-color: rgb(28, 28, 28) !important;
+  text-align: left !important;
+}
+/* @media (max-height: 920px) and (min-height: 670px) {
+  .mobiarmour_parallax_container {
+    height: 320px;
+    background: none;
+  }
+} */
+.nav-480{
+  display: none !important;
+    }
+
+    .mt-40{
+      margin-top: -40px;
+      margin-left: -100px;
+    }
+@media (max-width:480px){
+  .lf-70{
+    margin-left: -70px;
+  }
+  .nav-480{
+display: block !important;
+  }
+  .nonav-480{
+    display: none !important;
+      }
+}
