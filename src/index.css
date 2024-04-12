@@ -7,6 +7,7 @@
 
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -20,21 +21,102 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-#downloadModal{
+.navbar-brand{
+  cursor: pointer !important;
+ display: flex;
+ align-items: center;
+ gap: 0.5em;
+}
+.navbar-toggler{
+  border: none;
+  font-size: 1.25rem;
+}
+.navbar-toggler:focus, .btn-close:focus{
+  box-shadow: none;
+  outline: none;
+}
+.pe-3{
+  color: #fff;
+}
+.nav-link{
+  font-weight: 500;
+  cursor: pointer;
+}
+.nav-link:hover{
+  border-bottom: 1px solid #fff;
+}
+.footerLogo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  height: 10%;
+  gap: 0.5rem;
+  padding-left: 5%;
+}
+.footerLogo > h4 >a{
+  text-decoration: none;
+  color: #fff;
+}
+.bigFooter{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  padding-right: 10rem;
+}
+.last-footer{
+  border-top: 1px solid #fff;
+  padding-top: 1rem;
+}
+.impLinks{
+  display: flex;
+  gap: 4rem;
+  text-align: left;
+}
+.features > a,.socials > a,.download > a{
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+.features > a:hover,.socials > a:hover,.download > a:hover{
+  border-bottom: 1px solid #fff;
+}
+
+.downBtn {
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 0.5rem 2rem;
+}
+
+.downBtn:hover {
+  background: var(--Secoundry-color);
+  border: 1px solid var(--Secoundry-color);
+  transition: 0.3s ease-in-out;
+}
+
+.downBtn>a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#downloadModal {
   display: block;
-  position: fixed; 
-  z-index: 1; 
+  position: fixed;
+  z-index: 1;
   left: 30%;
   top: 20%;
-  width: 500px; 
-  height: 500px; 
-  overflow: auto; 
-  background-color: rgb(61, 54, 54); 
+  width: 500px;
+  height: 500px;
+  overflow: auto;
+  background-color: rgb(61, 54, 54);
   box-shadow: 0 0 100px 40px rgb(10, 10, 10);
 }
-.modal-container{
+
+.modal-container {
   padding: 90px 50px;
 }
+
 .close {
   color: #aaaaaa;
   float: right;
@@ -50,21 +132,30 @@ code {
   text-decoration: none;
   cursor: pointer;
 }
+
 .active {
   background-color: var(--Secoundry-color);
   color: var(--text_color);
 }
+
 .home_top_box_container {
   background-color: var(--Main_color);
   padding: 20px 0px 0px 0px;
   margin-top: 10rem !important;
 }
+
 .section_container1 {
   height: 80vh;
 }
+
 .navbar {
-  padding: 5px 0px !important;
+  width: 100%;
+  background: transparent;
 }
+.navbar-toggler-icon{
+  filter: invert(1);
+}
+
 /* .mobiarmour_img {
   height: 400px;
   width: 35%;
@@ -73,29 +164,50 @@ code {
   background-color: #1c1c1c !important;
   color: var(--text_color) !important;
 }
+
 .accordion-button::after {
   filter: invert(1);
 }
+
 div.app_button_container,
 .desk_top {
   display: none !important;
 }
+
 .mobiarmour_details {
   width: 50%;
   text-align: left;
+  margin-left: 10%;
+  transform: translateY(-10%);
 }
+
 .mobiarmour_details h3 {
   font-size: 2.5rem;
   text-align: left;
   margin-bottom: 30px;
 }
-.about_section_container h3 {
+
+.btnQr {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 10%;
+}
+.introTxt{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.introTxt h3 {
   font-size: 2.25rem;
 }
-.about_section_container p {
+
+.introTxt p {
   font-size: 1.125rem;
   line-height: 1.3125rem;
 }
+
 .mobiarmour_details p {
   font-size: 1.125rem;
   /* line-height: 1.3125rem; */
@@ -104,52 +216,65 @@ div.app_button_container,
   text-align: justify;
   margin-bottom: 30px;
 }
+
 #button-addon1 {
   background-color: var(--text_color) !important;
   color: var(--Main_color) !important;
   padding: 13px;
 }
+
 .button_bg {
   background-color: var(--Secoundry-color) !important;
   border: var(--Secoundry-color) !important;
   color: var(--text_color) !important;
 }
+
 .getbtnlinkSMS {
   width: 38%;
+  height: 10%;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: var(--text_color) !important;
+}
+
+.getbtnlinkSMS:hover {
   background-color: var(--Secoundry-color) !important;
   border: var(--Secoundry-color) !important;
   color: var(--text_color) !important;
 }
+
 .input-group {
   width: 60% !important;
 }
+
 .input-group input {
   color: var(--Main_color) !important;
 }
+
 .input-group input:focus {
   outline: none !important;
   box-shadow: none !important;
   border-color: var(--Main_color);
 }
+
 .form_container {
   margin-top: 70px;
 }
+
+.mobiarmour_img{
+  margin-bottom: 15%;
+  margin-right: 10%;
+}
+
 .mobiarmour_img img {
   width: 350px;
 }
 
 .mobiarmour_parallax_container {
-  height: 1000px;
-  background-image: url("./Assets/MobiArmor.png"),
-    url("./Assets/MobiArmor2.png"),
-    url("./Assets/MobiArmor3.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: top 150px left 110px, top 151px right 550px,
-  bottom 100px right 110px, bottom 10px left 10px;
-  /* background-position: top 105px left 240px, top 30px right 740px,
-    bottom 181px right 240px, bottom 10px left 10px; */
-  background-size: auto;
+  height: 800px;
+}
+.mobiarmour_parallax_container img{
+  margin-top: 10%;
 }
 .carousel_container {
   width: 800px;
@@ -157,179 +282,261 @@ div.app_button_container,
   background-color: #1c1c1c;
   text-align: center;
 }
+
 .carousel-item {
   background-color: rgb(28, 28, 28);
   padding: 20px 100px;
 }
+
 .testimonial_container {
   margin-top: 30px;
 }
+
 .user_img img {
   border-radius: 50%;
   margin-bottom: 40px;
 }
+
 .counter_wrapper {
   width: 800px;
   margin-top: 20px;
 }
+
 .counter_wrapper .card {
   width: 32%;
   padding: 20px;
   background-color: rgb(28, 28, 28);
   color: var(--text_color) !important;
 }
+
 .Qr_code {
   margin-top: 80px;
 }
+
 .footer_container {
   background-color: rgb(28, 28, 28);
   padding: 20px;
   margin-top: 50px;
 }
+
 .footer_container p {
   margin: 0px;
 }
-.navbar-brand,
-.nav-link {
-  cursor: pointer !important;
-}
+
 .about_container,
 .faq_container {
   /* height: 78vh; */
   display: flex;
   align-items: center;
 }
+
 #accordionFlushExample {
   width: 100%;
 }
+
 .accordion-button:focus {
   box-shadow: none !important;
 }
+
 .about_details {
   /* display: flex;
   align-items: center; */
 }
+
 .abuot_head {
   margin: 50px 0px;
 }
+
 .about_details p,
 .accordion-body {
   text-align: left;
 }
+
 .term_container {
   height: 78vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .footer_container a {
   display: inline-block !important;
 }
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1200px){
+  .mobiarmour_details{
+    margin-top: 10%;
+  }
+  .getbtnlinkSMS{
+    width: 58%;
+  }
+  .introTxt{
+    margin-top: 10%;
+  }
+}
+@media screen and (max-width: 980px) {
   .mobiarmour_img img {
-    width: 65% !important;
+    width: 50% !important;
+  }
+  .getbtnlinkSMS{
+    width: 58%;
   }
   .desk_top {
     display: block !important;
   }
-  .navbar-toggler-icon {
-    filter: invert(1);
-  }
+
   .section_container1 {
     flex-direction: column-reverse;
   }
-  .navbar-toggler {
-    border: 1px solid var(--text_gray_color) !important;
-  }
-  .navbar-toggler:focus {
-    box-shadow: none !important;
-  }
+
   .mobiarmour_details,
   .mobiarmour_img,
   .input-group,
   .counter_wrapper .card {
     width: 100% !important;
   }
+
   .mobiarmour_details h3,
   .about_section_container h3 {
     font-size: 1.3rem;
   }
- 
-  .mob_480 {
-    display: none !important;
+  
+  .mobiarmour_details{
+    padding-right: 10%;
   }
-  .form_container{
+  .btnQr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  .mt-40 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bigFooter{
+    display: block;
+  }
+  .impLinks{
+    padding-left: 10%;
+    padding-top: 10%;
+  }
+  .form_container {
     margin-top: 0px !important;
-    margin-bottom: 50px ;
+    margin-bottom: 50px;
   }
-  .form_container a{
+
+  .form_container a {
     width: 100%;
   }
+
   .section_container1,
   .about_container {
     height: auto;
   }
+
   .faq_container {
     height: 64vh;
   }
+
   .home_top_box_container {
-    padding: 10px !important;
+    
     margin-top: 0px !important;
   }
+
   .about_section_container p,
   .about_container p,
   .faq_container p {
     text-align: justify !important;
   }
+  .about_section_container p{
+    padding: 1rem 1rem;
+  }
   .carousel-item {
     padding: 20px 40px !important;
   }
+
   .counter_wrapper {
     flex-wrap: wrap !important;
   }
+
   .mobiarmour_parallax_container {
     height: auto;
     background: none;
   }
+
   .navbar-brand img {
     width: 30px;
   }
 
 }
 
-.modal-footer{
+@media screen and (max-width: 700px) {
+  .impLinks{
+    display: block;
+  }
+  .features,.socials,.download{
+    margin-top: 10%;
+  }
+  .mobiarmour_details{
+    margin-top: 10%;
+  }
+  .getbtnlinkSMS{
+    width: 68%;
+  }
+  .navbar-brand h3{
+    display: none;
+  }
+}
+@media screen and (max-width: 300px){
+  .getbtnlinkSMS{
+    width: 88%;
+  }
+  .mobiarmour_details{
+    margin-top: 22%;
+  }
+  .features,.socials,.download{
+    width: 10rem;
+  }
+}
+.modal-footer {
   border-top: none !important;
 }
-.modal-header{
+
+.modal-header {
   border-bottom: none !important;
 }
+
 .modal-content {
   background-color: rgb(28, 28, 28) !important;
   text-align: left !important;
 }
+
 /* @media (max-height: 920px) and (min-height: 670px) {
   .mobiarmour_parallax_container {
     height: 320px;
     background: none;
   }
 } */
-.nav-480{
+.nav-480 {
   display: none !important;
-    }
+}
 
-    .mt-40{
-      margin-top: -40px;
-      margin-left: -100px;
-    }
-@media (max-width:480px){
-  .lf-70{
+.mt-40 {
+  margin-top: -40px;
+  margin-left: -100px;
+}
+
+@media (max-width:480px) {
+  .lf-70 {
     margin-left: -70px;
   }
-  .nav-480{
-display: block !important;
+
+  .nav-480 {
+    display: block !important;
   }
-  .nonav-480{
+
+  .nonav-480 {
     display: none !important;
-      }
+  }
 }

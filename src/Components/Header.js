@@ -58,47 +58,63 @@ export default function Header() {
 
     return (<>
         {showModal ? <DownloadModal /> : ""}
-        <nav className="navbar navbar-expand-lg bg-dark nonav-480">
-            <div className="container">
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="true" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        
+
+       {/*<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
                 <a className="navbar-brand text-white" onClick={() => navigate(FRONTENDNAME + '/')}>
                     <img src={logo} alt="logo" width="50px" />
                 </a>
-                <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li className="nav-item" onClick={() => navigate(FRONTENDNAME + '/home')}>
-                            <a className="nav-link text-white a-border" aria-current="page ">Home</a>
+                <h3>MobiArmour</h3>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li onClick={() => navigate(FRONTENDNAME + '/home')}>
+                            <a aria-current="page ">Home</a>
                         </li>
-                        <li className="nav-item" onClick={() => navigate(FRONTENDNAME + '/about')}><a className="nav-link text-white a-border">About</a></li>
-                        <li className="nav-item" data-bs-toggle="modal" data-bs-target="#exampleModal"><a className="nav-link text-white a-border" > Support </a></li>
-                        
+                        <li onClick={() => navigate(FRONTENDNAME + '/about')}><a>About</a></li>
+                        <li data-bs-toggle="modal" data-bs-target="#exampleModal"><a> Support </a></li>
                     </ul>
-                    <button className="btn btn-outline-success button_bg nav-link" type="submit" onClick={onClickModal}><a className='text-light text-decoration-none' href={link}>Download App now</a></button>
+                   
                 </div>
+                <button className='downBtn' type="submit" onClick={onClickModal}><a href={link}>Download App now</a></button>
             </div>
-        </nav>
-        <nav className="navbar navbar-expand-lg bg-dark  nav-480">
-            <div className="container">
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="true" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <a className="navbar-brand text-white lf-70" onClick={() => navigate(FRONTENDNAME + '/')}>
-                    <img src={logo} alt="logo" width="50px" />
-                </a>
-                <button className="btn btn-outline-success button_bg" type="submit" ><a className='text-light text-decoration-none' href={link}>Download App</a></button>
-
-                <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li className="nav-item" onClick={() => navigate(FRONTENDNAME + '/home')}>
-                            <a className="nav-link text-white a-border" aria-current="page ">Home</a>
-                        </li>
-                        <li className="nav-item" onClick={() => navigate(FRONTENDNAME + '/about')}><a className="nav-link text-white a-border">About</a></li>
-                        <li className="nav-item" data-bs-toggle="modal" data-bs-target="#exampleModal"><a className="nav-link text-white a-border" > Support </a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        </nav> */}
 
 
-
+        <nav class="navbar navbar-expand-lg bg-transparent ">
+  <div class="container-fluid">
+    <a class="navbar-brand me-auto" href="/" onClick={() => navigate(FRONTENDNAME + '/')}>
+    <img src={logo} alt="logo" width="50px" />
+    <h3 className='text-light'>MobiArmour</h3>
+    </a>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header bg-black">
+        <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel">MobiArmour</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body bg-black">
+        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+          <li class="nav-item" onClick={() => navigate(FRONTENDNAME + '/home')}>
+            <a class="nav-link active mx-lg-2 text-light fs-3" aria-current="page" href="/" >Home</a>
+          </li>
+          <li class="nav-item" onClick={() => navigate(FRONTENDNAME + '/about')}>
+            <a class="nav-link mx-lg-2 text-light fs-3" >About</a>
+          </li>
+          <li class="nav-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <a class="nav-link mx-lg-2 text-light fs-3" >Support</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <button className='downBtn' type="submit" onClick={onClickModal}><a href={link}>Download App now</a></button>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon "></span>
+    </button>
+  </div>
+</nav>
 
         <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div className="modal-dialog modal-dialog-centered">
