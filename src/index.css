@@ -21,6 +21,45 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.socialLinksIcons >a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+.webScanImg,.OtpSecurityImg,.OnlineAccImg,.QrScanImg,.LeakPassImg,.AppAnalysisImg,.WifiSecurityImg{
+  width: 20%;
+}
+#WebsiteScanning,#QrScanning,#OtpSecurity,#LeakedPasswords,#OnlineAccounts,#WifiSecurity,#ExpSecurity,#AppAnalysis{
+  padding-top: 4rem;
+}
+#OnlineAccounts{
+  padding-bottom: 4rem;
+}
+.content{
+  height: 20%;
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content > div{
+  display: flex;
+  width: 60%;
+  gap: 5rem;
+}
+.content > div > div{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 5rem;
+}
+.expSecImg{
+  display: flex;
+  width: 60%;
+}
 .navbar-brand{
   cursor: pointer !important;
  display: flex;
@@ -467,6 +506,24 @@ div.app_button_container,
 
   .navbar-brand img {
     width: 30px;
+  }
+  .content{
+    font-size: 1rem;
+  }
+  .content > div{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .content > div > div{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 10rem;
+  }
+  .featuresContainer{
+    margin-top: 5rem;
+  }
+  .webScanImg,.OtpSecurityImg,.OnlineAccImg,.QrScanImg,.LeakPassImg,.AppAnalysisImg,.WifiSecurityImg{
+    width: 100%;
   }
 
 }

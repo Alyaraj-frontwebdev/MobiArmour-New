@@ -3,6 +3,7 @@ import Mob from '../Assets/Mob.png'
 import qr from '../Assets/qr.png'
 import ImgCard from './ImgCard.js'
 import Testimonials from './Testimonials'
+import Features from './Features.js'
 import Counter from './Counter'
 export default function HomeBody() {
     return (
@@ -32,6 +33,7 @@ export default function HomeBody() {
                     </div>
                 </section>
                 <ImgCard />
+                <Features />
                 <Testimonials />
                 {/* <Counter /> */}
             </div>

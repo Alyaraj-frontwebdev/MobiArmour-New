@@ -106,6 +106,9 @@ export default function Header() {
           <li class="nav-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <a class="nav-link mx-lg-2 text-light fs-3" >Support</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link mx-lg-2 text-light fs-3" href="#featuresHeading">Features</a>
+          </li>
         </ul>
       </div>
     </div>

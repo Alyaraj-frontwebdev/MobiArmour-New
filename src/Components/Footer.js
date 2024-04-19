@@ -34,23 +34,24 @@ export default function Footer() {
                     <div className='impLinks'>
                         <div className='features'>
                             <h3>Features</h3>
-                            <a>Website Scanning</a><br/>
-                            <a>WiFi Security</a><br/>
-                            <a>OTP Security</a><br/>
-                            <a>QR Scanning</a><br/>
-                            <a>App Permission</a><br/>
-                            <a>Social Media Security</a><br/>
-                            <a>Online Account Security</a>
+                            <a href="#WebsiteScanning">Website Scanning</a><br />
+                            <a href="#QrScanning">QR Scanning</a><br />
+                            <a href="#OtpSecurity">OTP Security</a><br />
+                            <a href="#WifiSecurity">WiFi Security</a><br />
+                            <a href="#ExpSecurity">Expert Security</a><br />
+                            <a href="#AppAnalysis">App Analysis</a><br />
+                            <a href="#LeakedPasswords">Leaked Passwords</a><br />
+                            <a href="#OnlineAccounts">Online Accounts</a>
                         </div>
                         <div className='socials'>
                             <h3>Socials</h3>
-                            <a href='https://www.instagram.com/mobi.armour/' target='_blank'>Instagram</a><br/>
-                            <a href='https://m.facebook.com/61554165416709/' target='_blank'>Facebook</a><br/>
+                            <a href='https://m.facebook.com/61554165416709/' target='_blank'>Facebook</a><br />
+                            <a href='https://www.instagram.com/mobi.armour/' target='_blank'>Instagram</a><br />
                             <a href='https://wa.me/918851037358' target='_blank'>WhatsApp</a>
                         </div>
                         <div className='download'>
                             <h3>Download</h3>
-                            <a href='https://apps.apple.com/kz/app/mobiarmour/id6469784101' target='_blank'>Apple App Store</a><br/>
+                            <a href='https://apps.apple.com/kz/app/mobiarmour/id6469784101' target='_blank'>Apple App Store</a><br />
                             <a href='https://play.google.com/store/apps/details?id=com.prosthetik.supernova&pcampaignid=web_share' target='_blank'>Google Play Store</a>
                         </div>
                     </div>
@@ -60,6 +61,11 @@ export default function Footer() {
                         <p> © 2023, Mobiarmour All Right Reserved | <span role="button" data-bs-toggle="modal" data-bs-target="#exampleModal"> Contact Us </span>| <span > <a className='text-light text-decoration-none' href="https://armour.mobi/privacy.html">Privacy Policy</a>  </span>
                         </p>
                     </div>
+                </div>
+                <div className="socialLinksIcons">
+                    <a href='https://m.facebook.com/61554165416709/' target='_blank'><span><i class="bi bi-facebook"></i></span></a>
+                    <a href='https://www.instagram.com/mobi.armour/' target='_blank'><span><i class="bi bi-instagram"></i></span></a>
+                    <a href='https://wa.me/918851037358' target='_blank'><span><i class="bi bi-whatsapp"></i></span></a>
                 </div>
 
                 <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
